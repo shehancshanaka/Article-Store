@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Styles */
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Dropzone Styles */
+.dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    background: #f8f9fa;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.dropzone .dz-message {
+    margin: 2em 0;
+    color: #6c757d;
+}
+
+/* Search Results */
+.article-card {
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    transform: scale(1.02);
+}
+
+.article-thumbnail {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Select2 Customization */
+.select2-container--bootstrap-5 .select2-selection {
+    min-height: 38px;
+    border: 1px solid #ced4da;
+}
+
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered {
+    padding: 0 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .article-thumbnail {
+        height: 150px;
+    }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.loading-spinner.active {
+    display: block;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Tag Input */
+.tag-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.tag {
+    background-color: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag-remove {
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.tag-remove:hover {
+    color: #dc3545;
+} 
